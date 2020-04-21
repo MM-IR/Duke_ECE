@@ -40,9 +40,13 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
       }
     //when you finish counting x from 0 to w, 
     //print a newline
-      putchar('\n');
     }
+    putchar('\n');
   }
 }
 
 // vim: ts=2:sw=2:et
+int main(void) {
+ squares(4, 2, 1, 4);
+ return 0;
+}
