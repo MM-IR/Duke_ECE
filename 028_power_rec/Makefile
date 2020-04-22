@@ -1,0 +1,9 @@
+program: test-power.o test.o
+	gcc  test-power.o test.o -o program
+test-power.o: test-power.c
+	gcc -c test-power.c
+test.o: power.c
+	gcc -c power.c -o test.o
+.PHONY:clean
+clean:
+	rm -f *.c~ *.h~ *.o program
