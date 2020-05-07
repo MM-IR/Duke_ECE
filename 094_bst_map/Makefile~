@@ -1,8 +1,0 @@
-CFLAG = -Wall -Werror -std=gnu++98 -ggdb3
-
-test: bsttest.cpp bstmap.h map.h
-	g++ -o $@ $^
-
-.PHONY:clean
-clean:
-	rm -rf *.cpp~ *.h~ test
